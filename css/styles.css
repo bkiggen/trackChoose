@@ -23,9 +23,9 @@ a:hover {
   color: #fef;
 }
 
-input {
-  visibility: hidden;
-}
+/* input {
+  display:none;
+} */
 
 label {
   cursor: pointer;
@@ -38,6 +38,10 @@ label {
   position: absolute;
   top: -120px;
   left: 0px;
+}
+
+input:checked {
+  background-color: green;
 }
 
 .col-sm-5 {

@@ -8,28 +8,35 @@ $(document).ready(function(){
     var answer4 = $('input[name=question4]:checked').val();
     var answer5 = $('input[name=question5]:checked').val();
 
-//decision tree
+//logic tree
     if (answer5 === "butterfly") {
       if (answer1 === "front") {
-        //front end info
-        console.log("front");
+        $("#react").removeClass("hidden");
+        $("#react").siblings().addClass("hidden");
       } else if (answer1 === "back") {
         //back end tree
         if (answer2 === "big"){
-          //C#
-          console.log("big");
+          //C# info
+          $("#c").removeClass("hidden");
+          $("#c").siblings().addClass("hidden");
         } else if (answer2 === "small"){
-          //ruby
+          //ruby info
+          $("#ruby").removeClass("hidden");
+          $("#ruby").siblings().addClass("hidden");
         };
       };
     } else if (answer5 === "wolf") {
       //not Epicodus
   };
+
+
   // Script to catch empty form submission
     if (!(answer3 === "simple" || answer3 === "complex") || !(answer4 === "small" || answer4 === "big") || !(answer2 === "big" || answer2 === "small") || !(answer1 === "front" || answer1 === "back") || !(answer5 === "butterfly" || answer5 === "wolf")) {
-      alert("Please answer all questions!");
+          $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
+          alert("Please answer all questions!");
+    } else {
+          $('html, body').animate({scrollTop:$('.result').offset().top}, 500);
     };
-
   });
 //click scroll function
   $('#start').click(function() {

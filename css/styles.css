@@ -25,7 +25,7 @@ label h2 {
 #end {
   margin-top: 600px;
   text-align: center;
-  margin-bottom: 500px;
+  margin-bottom: 800px;
 }
 
 #start button, #end button {
@@ -76,4 +76,21 @@ label {
 .btnselected {
   background-color: red;
   color: white;
+}
+
+#resultHead {
+  padding-bottom: 20px;
+}
+
+#ruby, #react, #c {
+  height: 500px;
+
+}
+
+.result {
+  height:800px;
+}
+
+.hidden {
+  display:none;
 }

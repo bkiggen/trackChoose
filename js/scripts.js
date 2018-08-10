@@ -1,4 +1,5 @@
 $(document).ready(function(){
+  $('html, body').animate({scrollTop:$('.jumbotron').offset().top}, 500);
   $("#form1").submit(function(event){
     event.preventDefault();
     //variables defined

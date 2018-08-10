@@ -1,0 +1,33 @@
+/* * {
+    border: 1px solid black;
+} */
+
+h1, h3 {
+  text-align: center;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: yellow;
+}
+
+.answer {
+  vertical-align: top;
+}
+
+
+.col-sm-5 {
+  background-color: grey;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.row {
+  margin-top: 250px;
+}

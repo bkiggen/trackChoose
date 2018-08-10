@@ -6,19 +6,34 @@ h1, h3 {
   text-align: center;
 }
 
+.row h3 {
+  margin-bottom: 50px;
+}
+
 a {
   color: white;
+  display: block;
+  height: 100%;
 }
 
 a:hover {
   text-decoration: none;
-  color: yellow;
+  color: #fef;
 }
 
-.answer {
-  vertical-align: top;
+/* input {
+  visibility: hidden;
+} */
+
+.align {
+  vertical-align: middle;
 }
 
+label {
+  cursor: pointer;
+  font-size: 40px;
+  margin-top: 120px;
+}
 
 .col-sm-5 {
   background-color: grey;
@@ -30,4 +45,9 @@ a:hover {
 
 .row {
   margin-top: 250px;
+}
+
+.btnselected {
+  background-color: red;
+  color: white;
 }

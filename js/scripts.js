@@ -10,10 +10,10 @@ $(document).ready(function(){
     var answer5 = $('input[name=question5]:checked').val();
 // Script to catch empty form submission
     if (!(answer3 === "simple" || answer3 === "complex") || !(answer4 === "small" || answer4 === "big") || !(answer2 === "big" || answer2 === "small") || !(answer1 === "front" || answer1 === "back") || !(answer5 === "butterfly" || answer5 === "wolf")) {
-          $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
-          alert("Please answer all questions!");
+      $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
+      alert("Please answer all questions!");
     } else {
-          $('html, body').animate({scrollTop:$('.result').offset().top}, 500);
+      $('html, body').animate({scrollTop:$('.result').offset().top}, 500);
 //logic tree
         if (answer5 === "butterfly") {
           if (answer1 === "front") {
@@ -40,21 +40,21 @@ $(document).ready(function(){
   });
 //click scroll function
   $('#start').click(function() {
-      $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
   });
   $('input[name=question1]').click(function() {
-      $('html, body').animate({scrollTop:$('#q2').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#q2').offset().top}, 500);
   });
   $('input[name=question2]').click(function() {
-      $('html, body').animate({scrollTop:$('#q3').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#q3').offset().top}, 500);
   });
   $('input[name=question3]').click(function() {
-      $('html, body').animate({scrollTop:$('#q4').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#q4').offset().top}, 500);
   });
   $('input[name=question4]').click(function() {
-      $('html, body').animate({scrollTop:$('#q5').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#q5').offset().top}, 500);
   });
   $('input[name=question5]').click(function() {
-      $('html, body').animate({scrollTop:$('#end').offset().top}, 500);
+    $('html, body').animate({scrollTop:$('#end').offset().top}, 500);
   });
 });

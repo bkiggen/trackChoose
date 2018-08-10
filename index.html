@@ -7,12 +7,19 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
         <h1 class="jumbotron">Which Epicodus Track is Right for You?</h1>
+        <h2>Find out in this short quiz!</h2>
       </div>
+
+      <div id="start">
+        <button type="button" name="start" class="btn btn-info">Let's Get Started!</button>
+      </div>
+
       <div class="row" id="q1">
         <h3>Do you prefer to make things PRETTY or make things WORK?</h3>
 
@@ -36,11 +43,11 @@
       </div>
 
       <div class="row" id="q2">
-        <h3>Do you prefer to make things PRETTY or make things WORK?</h3>
+        <h3>Do you want to work for a BIG company?</h3>
         <form class="form2">
           <!-- col 1 -->
           <div class="col-sm-5">
-            <label for="question2a"><h2>PRETTY</h2><input id="question2a" type="radio" name="question2" value="front"/></label>
+            <label for="question2a"><h2>YES</h2><input id="question2a" type="radio" name="question2" value="big"/></label>
           </div>
           <!-- gap between -->
           <div class="col-sm-2">
@@ -48,17 +55,17 @@
           </div>
           <!-- col 2 -->
           <div class="col-sm-5">
-              <label for="question2b"><h2>WORK</h2><input id="question2b" type="radio" name="question2" value="back" /></label>
+              <label for="question2b"><h2>NO</h2><input id="question2b" type="radio" name="question2" value="small" /></label>
           </div>
         </form>
       </div>
 
       <div class="row" id="q3">
-        <h3>Do you prefer to make things PRETTY or make things WORK?</h3>
+        <h3>When you read a book, do you prefer simple or complex prose?</h3>
         <form class="form3">
           <!-- col 1 -->
           <div class="col-sm-5">
-            <label for="question3a"><h2>PRETTY</h2><input id="question3a" type="radio" name="question3" value="front"/></label>
+            <label for="question3a"><h2>SIMPLE</h2><input id="question3a" type="radio" name="question3" value="simple"/></label>
           </div>
           <!-- gap between -->
           <div class="col-sm-2">
@@ -66,17 +73,17 @@
           </div>
           <!-- col 2 -->
           <div class="col-sm-5">
-              <label for="question3b"><h2>WORK</h2><input id="question3b" type="radio" name="question3" value="back" /></label>
+              <label for="question3b"><h2>COMPLEX</h2><input id="question3b" type="radio" name="question3" value="complex" /></label>
           </div>
         </form>
       </div>
 
       <div class="row" id="q4">
-        <h3>Do you prefer to make things PRETTY or make things WORK?</h3>
+        <h3>Are you interested in building your own software from scratch?</h3>
         <form class="form4">
           <!-- col 1 -->
           <div class="col-sm-5">
-            <label for="question4a"><h2>PRETTY</h2><input id="question4a" type="radio" name="question4" value="front"/></label>
+            <label for="question4a"><h2>YES</h2><input id="question4a" type="radio" name="question4" value="small"/></label>
           </div>
           <!-- gap between -->
           <div class="col-sm-2">
@@ -84,17 +91,17 @@
           </div>
           <!-- col 2 -->
           <div class="col-sm-5">
-              <label for="question4b"><h2>WORK</h2><input id="question4b" type="radio" name="question2" value="back" /></label>
+              <label for="question4b"><h2>NO</h2><input id="question4b" type="radio" name="question4" value="big" /></label>
           </div>
         </form>
       </div>
 
       <div class="row" id="q5">
-        <h3>Do you prefer to make things PRETTY or make things WORK?</h3>
+        <h3>Are you a social butterfly or a lone wolf?</h3>
         <form class="form5">
           <!-- col 1 -->
           <div class="col-sm-5">
-            <label for="question5a"><h2>PRETTY</h2><input id="question5a" type="radio" name="question5" value="front"/></label>
+            <label for="question5a"><h2>BUTTERFLY</h2><input id="question5a" type="radio" name="question5" value="butterfly"/></label>
           </div>
           <!-- gap between -->
           <div class="col-sm-2">
@@ -102,13 +109,14 @@
           </div>
           <!-- col 2 -->
           <div class="col-sm-5">
-              <label for="question5b"><h2>WORK</h2><input id="question5b" type="radio" name="question5" value="back" /></label>
+              <label for="question5b"><h2>WOLF</h2><input id="question5b" type="radio" name="question5" value="wolf" /></label>
           </div>
+          <br>
+          <div id="end">
+            <button type="submit" name="start" class="btn btn-danger">All done!</button>
+          </div>
+
         </form>
-      </div>
-
-
-        </div>
       </div>
     </div>
   </body>

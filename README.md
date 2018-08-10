@@ -15,6 +15,11 @@ This software helps potential developers consider the many options in programmin
 * Clone the repository using $git clone https://github.com/bkiggen/trackChoose
 * _Open index.html in a web browser_
 
+## Notes
+
+*9:00 Struggling with getting my divs to, on click, toggle radio button states AND be links to next question. Can't get label to sit inside div - trying to overflow on me. 
+
+* 10:30 Looked up click-scroll function on stackoverflow. Knew what I needed, didn't know how to execute, understand code I'm using.
 
 ## Support and contact details
 

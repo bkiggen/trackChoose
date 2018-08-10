@@ -16,7 +16,11 @@ $(document).ready(function(){
 
 
 
+
 //click scroll function
+  $('#start button').click(function() {
+      $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
+  });
   $('input[name=question1]').click(function() {
       $('html, body').animate({scrollTop:$('#q2').offset().top}, 500);
   });
@@ -28,5 +32,8 @@ $(document).ready(function(){
   });
   $('input[name=question4]').click(function() {
       $('html, body').animate({scrollTop:$('#q5').offset().top}, 500);
+  });
+  $('input[name=question5]').click(function() {
+      $('html, body').animate({scrollTop:$('#end').offset().top}, 500);
   });
 });

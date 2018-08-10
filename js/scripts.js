@@ -8,16 +8,29 @@ $(document).ready(function(){
     var answer4 = $('input[name=question4]:checked').val();
     var answer5 = $('input[name=question5]:checked').val();
 
+//decision tree
+    if (answer5 === "butterfly") {
+      if (answer1 === "front") {
+        //front end info
+        console.log("front");
+      } else if (answer1 === "back") {
+        //back end tree
+        if (answer2 === "big"){
+          //C#
+          console.log("big");
+        } else if (answer2 === "small"){
+          //ruby
+        };
+      };
+    } else if (answer5 === "wolf") {
+      //not Epicodus
+  };
+  // Script to catch empty form submission
+    if (!(answer3 === "simple" || answer3 === "complex") || !(answer4 === "small" || answer4 === "big") || !(answer2 === "big" || answer2 === "small") || !(answer1 === "front" || answer1 === "back") || !(answer5 === "butterfly" || answer5 === "wolf")) {
+      alert("Please answer all questions!");
+    };
 
-    console.log(answer1);
   });
-
-
-
-
-
-
-
 //click scroll function
   $('#start').click(function() {
       $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);

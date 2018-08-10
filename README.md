@@ -17,9 +17,11 @@ This software helps potential developers consider the many options in programmin
 
 ## Notes
 
-*9:00 Struggling with getting my divs to, on click, toggle radio button states AND be links to next question. Can't get label to sit inside div - trying to overflow on me. 
+*9:00 Struggling with getting my divs to, on click, toggle radio button states AND be links to next question. Can't get label to sit inside div - trying to overflow on me.
 
 * 10:30 Looked up click-scroll function on stackoverflow. Knew what I needed, didn't know how to execute, understand code I'm using.
+
+* Can't get 'required' to work on radio buttons. I am going to use js if statements, knowing there must be a more elegant solution. 
 
 ## Support and contact details
 

@@ -23,6 +23,7 @@ label h2 {
 }
 
 #end {
+  padding-top:100px;
   margin-top: 600px;
   text-align: center;
   margin-bottom: 800px;
@@ -58,7 +59,6 @@ label {
   left: 0px;
 }
 
-
 .col-sm-5 {
   background-color: #5bc0de;
   color: #fff;
@@ -84,7 +84,6 @@ label {
 
 #ruby, #react, #c, #other {
   height: 500px;
-
 }
 
 .result {

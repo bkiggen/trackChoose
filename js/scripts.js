@@ -2,20 +2,19 @@ $(document).ready(function(){
   $('html, body').animate({scrollTop:$('.jumbotron').offset().top}, 500);
   $("#form1").submit(function(event){
     event.preventDefault();
-    //variables defined
+//variables defined
     var answer1 = $('input[name=question1]:checked').val();
     var answer2 = $('input[name=question2]:checked').val();
     var answer3 = $('input[name=question3]:checked').val();
     var answer4 = $('input[name=question4]:checked').val();
     var answer5 = $('input[name=question5]:checked').val();
-
-  // Script to catch empty form submission
+// Script to catch empty form submission
     if (!(answer3 === "simple" || answer3 === "complex") || !(answer4 === "small" || answer4 === "big") || !(answer2 === "big" || answer2 === "small") || !(answer1 === "front" || answer1 === "back") || !(answer5 === "butterfly" || answer5 === "wolf")) {
           $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
           alert("Please answer all questions!");
     } else {
           $('html, body').animate({scrollTop:$('.result').offset().top}, 500);
-  //logic tree
+//logic tree
         if (answer5 === "butterfly") {
           if (answer1 === "front") {
             $("#react").removeClass("hidden");
@@ -37,7 +36,6 @@ $(document).ready(function(){
           $("#other").removeClass("hidden");
           $("#other").siblings().addClass("hidden");
       };
-
     };
   });
 //click scroll function

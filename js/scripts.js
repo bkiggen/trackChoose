@@ -9,7 +9,7 @@ $(document).ready(function(){
     var answer4 = $('input[name=question4]:checked').val();
     var answer5 = $('input[name=question5]:checked').val();
 // Script to catch empty form submission
-    if (!(answer3 === "simple" || answer3 === "complex") || !(answer4 === "small" || answer4 === "big") || !(answer2 === "big" || answer2 === "small") || !(answer1 === "front" || answer1 === "back") || !(answer5 === "butterfly" || answer5 === "wolf")) {
+    if((!answer1) || (!answer2) || (!answer3) || (!answer4) || (!answer5)){
       $('html, body').animate({scrollTop:$('#q1').offset().top}, 500);
       alert("Please answer all questions!");
     } else {
